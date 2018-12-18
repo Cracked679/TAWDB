@@ -1,0 +1,39 @@
+
+/* Use Auto prefixers */
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
+}
+
+body{
+    background-color: violet;
+}
+#btn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background-color: tomato;
+    font-size: 16px;
+    font-weight: 300px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 25px 80px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 6px rgb(202, 35, 6);
+
+}
+
+#btn:hover{
+    box-shadow: 0 4px rgb(202, 35, 6);
+    top : 2px;
+}
+
+#btn:active{
+    box-shadow: 0 0 rgb(202, 35, 6);   
+}

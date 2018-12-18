@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        p{
+            width: 100px;
+            height: 100px;
+            margin: 50px auto;
+            border-radius: 20px;
+            line-height: 100px;
+            text-align: center;
+            color: white;
+            font-size: 17px;
+            background-color: peru;
+        }
+        /* .box:hover{
+            background-color: rgb(216, 32, 0);
+            transform-origin: top left;
+            transform: scale(2);
+            opacity: 0.5;
+            border-radius: 50px;
+        } */
+
+        /* .animated{
+            transition-property: background,border-radius;
+            transition-duration: 1s ,1s;
+            transition-delay: 5s,2s;
+        } */
+
+        .animated{
+            transition: transform 2s ease-out 0.5s,backround-color 0.5s linear;
+            /* transition-property: transform;
+            transition-duration:2s;
+            transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+            transition-delay: 0.5s;  */
+        }
+        .box:hover{
+            transform: translateX(300px);
+            background-color: teal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tranistion allow us to animate a single state change.</h1>
+    <p class="box">BORING</p>
+    <p class="animated box">ANIMATED</p>
+</body>
+</html>

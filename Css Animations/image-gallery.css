@@ -1,0 +1,95 @@
+h1{
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+    font-family: 'Alfa Slab One', cursive;
+}
+.container{
+   display: flex;
+   justify-content: center;
+}
+.item{
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width:100%;
+    text-align: center;
+    background: #000000;
+    box-shadow:  0 0 5px rgba(0,0,0,0.15);
+}
+div .item *{
+    box-sizing: border-box;
+}
+
+div .item img{
+    max-width: 100%;
+    vertical-align: top;
+    height: 210px;
+}
+
+div .item i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    font-size: 34px;
+    color: #000000;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #ffffff;
+}
+
+div .item a{
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+div.item.red{
+    background-color: red;
+}
+
+div.item.red i{
+    color: red;
+}
+
+div.item.purple{
+    background-color: purple;
+}
+
+div.item.purple i{
+    color: purple;
+}
+
+div.item.green{
+    background-color: green;
+}
+
+div.item.green i{
+    color: green;
+}
+
+div.item:hover img{
+    opacity: 0.3;
+    filter: grayscale(100%);
+}
+
+div.item *{
+    transition: all 0.35s ease-in-out;
+}
+
+div.item i{
+    transform: translate(-50%,-50%) scale(0);
+    transition: transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+div.item:hover i{
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}

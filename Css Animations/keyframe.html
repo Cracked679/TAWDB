@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        p{
+            animation-name: rainbowtext;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes rainbowtext{
+            0%{
+                color: red;
+                font-size: 40px;
+            }
+            25%{
+                color: orange;
+                font-size: 40px;
+            }
+            50%{
+                color: yellow;
+                font-size: 80px;
+            }
+            75%{
+                color: green
+            }
+            100%{
+                color: blue;
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Keyframes allow us for much more complex multi state animations.</h1>
+    <p>Hello</p>
+</body>
+</html>
