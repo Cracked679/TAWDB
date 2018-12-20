@@ -1,0 +1,30 @@
+flex-navbar.html:10 GET file:///C:/Users/Cracked/Desktop/TAWDB/Css%20Flexbox/main.css net::ERR_FILE_NOT_FOUND
+flex-navbar.html:11 GET file:///C:/Users/Cracked/Desktop/TAWDB/Css%20Flexbox/main.js net::ERR_FILE_NOT_FOUND
+flex-navbar.html:1 [Intervention] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://use.fontawesome.com/releases/v5.6.1/webfonts/fa-solid-900.woff2
+flex-navbar.html:1 [Intervention] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://fonts.gstatic.com/s/alfaslabone/v7/6NUQ8FmMKwSEKjnm5-4v-4Jh2dJhew.woff2
+Promise(function(resolve,reject));
+VM2244:1 Uncaught SyntaxError: Unexpected token )
+var promise = new Promise(function (resolve,reject){
+	setTimeout(function(){
+		var randomInt = Math.floor(Math.random()*10);
+		resolve(randomInt);
+	},4000);
+});
+
+promise.then(function(data){
+	console.log("Random int passed to resolve:",data)
+});
+Promise {<pending>}
+VM2706:9 Random int passed to resolve: 2
+var promise = new Promise(function (resolve,reject){
+	setTimeout(function(){
+		var randomInt = Math.floor(Math.random()*10);
+		resolve(randomInt);
+	},4000);
+});
+
+promise.then(function(data){
+	console.log("Random int passed to resolve:",data)
+});
+Promise {<pending>}
+VM2708:9 Random int passed to resolve: 7
