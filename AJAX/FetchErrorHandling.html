@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fetch handling Errors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <button>CLICK ME TO MAKE A BAD REQUEST</button>
+</body>
+<script>
+    var btn = document.querySelector("button");
+    btn.addEventListener("click",function(){
+    var url = "https://api.github.com/users/cracked679";
+    fetch(url)
+    .then(handleErrors)
+    .then(function(request){
+        console.log("Everything is Fine");
+        console.log(request);
+    })
+    .catch(function(error){
+        console.log(error);
+    });
+    });
+
+    function handleErrors(request){
+        if(!request.ok){
+        throw Error(request.status);
+        }
+        return request;
+    }
+</script>
+</html>
