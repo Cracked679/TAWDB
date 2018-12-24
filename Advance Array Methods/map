@@ -1,0 +1,34 @@
+VM818:1 Console was cleared
+undefined
+var arr = [1,2,3,4,5,6];
+
+arr.map(function(val,i,arr){
+	return val * 2;
+})
+(6) [2, 4, 6, 8, 10, 12]
+// our Implementation of map
+function map(array,callback){
+	var newArr = [];
+
+	for(var i=0;i<array.length;i++){
+		newArr.push(callback(array[i],i,array));
+	}
+	return newArr;
+}
+undefined
+map([1,2,3,4,5,6])
+VM1200:6 Uncaught TypeError: callback is not a function
+    at map (<anonymous>:6:15)
+    at <anonymous>:1:1
+map @ VM1200:6
+(anonymous) @ VM1223:1
+map([1,2,3],function(val){return val *2; })
+(3) [2, 4, 6]0: 21: 42: 6length: 3__proto__: Array(0)
+function tripleValue(arr){
+	return arr.map(function(val){
+		return val *3;
+	});
+}
+undefined
+tripleValue([1,2,3,4]);
+(4) [3, 6, 9, 12]

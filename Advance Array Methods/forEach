@@ -1,0 +1,92 @@
+VM154:1 Console was cleared
+undefined
+function doubleValues(arr){}
+undefined
+function doubleValues(arr){
+	var newArr = [];
+	
+	arr.forEach(function(val){
+		newArr.push(val * 2);
+	})
+	return newArr;
+}
+undefined
+doubleValues([2,4,6,8]);
+(4) [4, 8, 12, 16]
+function onlyEven(arr){
+	var newArr = [];
+
+	arr.forEach(function(val){
+		if(val/2 == 0){
+			newArr.push(val);
+		}
+	})
+	return newArr;
+}
+undefined
+onlyEven([1,2,3,4,5,6,7,8])
+[]length: 0__proto__: Array(0)
+function onlyEven(arr){
+	var newArr = [];
+
+	arr.forEach(function(val){
+		if(val%2 == 0){
+			newArr.push(val);
+		}
+	})
+	return newArr;
+}
+undefined
+onlyEven([1,2,3,4,5,6,7,8])
+(4) [2, 4, 6, 8]
+function showFirstAndLast(arr){
+	var newArr = [];
+
+	arr.forEach(function(val){
+		newArr.push(val[0] + val[val.length() - 1]);
+	})
+	return newArr;
+}
+undefined
+showFirstAndLast([2,3,4,5,5,6])
+VM737:5 Uncaught TypeError: val.length is not a function
+    at <anonymous>:5:32
+    at Array.forEach (<anonymous>)
+    at showFirstAndLast (<anonymous>:4:6)
+    at <anonymous>:1:1
+(anonymous) @ VM737:5
+showFirstAndLast @ VM737:4
+(anonymous) @ VM762:1
+function showFirstAndLast(arr){
+	var newArr = [];
+
+	arr.forEach(function(val){
+		newArr.push(val[0] + val[val.length - 1]);
+	})
+	return newArr;
+}
+undefined
+showFirstAndLast([2,3,4,5,5,6])
+(6) [NaN, NaN, NaN, NaN, NaN, NaN]0: NaN1: NaN2: NaN3: NaN4: NaN5: NaNlength: 6__proto__: Array(0)
+function showFirstAndLast(arr){
+	var newArr = [];
+
+	arr.forEach(function(val){
+		newArr.push(val[0] + val[val.length - 1])
+	});
+	return newArr;
+}
+undefined
+showFirstAndLast([2,3,4,5,5,6])
+(6) [NaN, NaN, NaN, NaN, NaN, NaN]0: NaN1: NaN2: NaN3: NaN4: NaN5: NaNlength: 6__proto__: Array(0)
+function showFirstAndLast(arr){
+	var newArr = [];
+
+	arr.forEach(function(val){
+		newArr.push(val[0] + val[val.length-1])
+	});
+	return newArr;
+}
+undefined
+showFirstAndLast([2,3,4,5,5,6])
+(6) [NaN, NaN, NaN, NaN, NaN, NaN]
