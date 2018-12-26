@@ -1,0 +1,60 @@
+VM943:1 Console was cleared
+undefined
+var names = ['Tim','Matt','Colt','Elie'];
+undefined
+names.reduce(function(accumulator,nextValue){
+		return accumulator += ' , '+ nextvalue;
+
+},'The instructors are ');
+VM1218:2 Uncaught ReferenceError: nextvalue is not defined
+    at <anonymous>:2:32
+    at Array.reduce (<anonymous>)
+    at <anonymous>:1:7
+(anonymous) @ VM1218:2
+(anonymous) @ VM1218:1
+names.reduce(function(accumulator, nextValue){
+		return accumulator += ' , '+ nextvalue;
+
+},'The instructors are ');
+VM1236:2 Uncaught ReferenceError: nextvalue is not defined
+    at <anonymous>:2:32
+    at Array.reduce (<anonymous>)
+    at <anonymous>:1:7
+(anonymous) @ VM1236:2
+(anonymous) @ VM1236:1
+names.reduce(function(accumulator, nextValue){
+		return accumulator += ' , '+ nextValue;
+
+},'The instructors are ');
+"The instructors are  , Tim , Matt , Colt , Elie"
+//Objects
+
+var arr = [5,4,1,4,5];
+
+arr.reduce(function(accumulator,nextValue){
+	if(nextValue in accumulator){
+		accumulator[nextValue]++;
+	}
+	else{}
+	
+});
+VM1476:6 Uncaught TypeError: Cannot use 'in' operator to search for '4' in 5
+    at <anonymous>:6:15
+    at Array.reduce (<anonymous>)
+    at <anonymous>:5:5
+(anonymous) @ VM1476:6
+(anonymous) @ VM1476:5
+//Objects
+
+var arr = [5,4,1,4,5];
+
+arr.reduce(function(accumulator,nextValue){
+	if(nextValue in accumulator){
+		accumulator[nextValue]++;
+	}
+	else{
+		accumulator[nextValue] = 1;
+	}
+	return accumulator;
+},{});
+{1: 1, 4: 2, 5: 2}1: 14: 25: 2__proto__: Object

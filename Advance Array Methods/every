@@ -1,0 +1,18 @@
+VM685:1 Console was cleared
+undefined
+function allLowercase(str){
+	return arr.split('').every(function(value){
+		return value === value.toLowerCase();
+	});
+}
+undefined
+function allLowercase(str){
+	return str.split('').every(function(value){
+		return value === value.toLowerCase();
+	});
+}
+undefined
+allLowercase('this is really nice');
+true
+allLowercase('This is really nice');
+false
